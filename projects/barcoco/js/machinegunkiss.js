@@ -1,0 +1,22 @@
+var machineGunKiss = {
+    "lineCount": 19, 
+    0: {"en": "", "jp":"", "time": 390}, // 13.5 seconds = 13.5 * 30 = 405 'ticks'
+    1: {"en": "MIDNIGHT SHADOW kirisaku", "jp": "MIDNIGHT SHADOW 切り裂く", "time": 155}, 
+    2: {"en": "ACCEL kishimu HIGHWAY CITY", "jp": "アクセル 軋む HIGHWAY CITY", "time": 175},
+    3: {"en": "joshuseki utsumuku omae no", "jp": "助手席 うつむく お前の", "time": 217},
+    4: {"en": "ROUGE iro no urei", "jp": "ルージュ色の憂い", "time": 150},
+    5: {"en": "toida KNIFE no you na", "jp": "研いだナイフのような", "time": 120},
+    6: {"en": "ore wo tsutsumikonda MY SWEET BABE", "jp": "俺を包み込んだ MY SWEET BABE", "time": 165},
+    7: {"en": "hedo deru you na", "jp": "反吐出るような ", "time": 75},
+    8: {"en": "PAST ya FUTURE", "jp": "PASTやFUTURE", "time": 80},
+    9: {"en": "ore ga nurikaete yaru sa", "jp": "俺が塗り替えてやるさ", "time": 165},
+    10: {"en": "ikou ze futari kiri no EDEN", "jp": "行こうぜ 二人きりのエデン", "time": 195},
+    11: {"en": "ichioku, nioku, hyakuoku no", "jp": "1億 2億 100億の", "time": 175},
+    12: {"en": "KISS wo abisete yaru BABY", "jp": "キスを浴びせてやる BABY", "time": 150},
+    13: {"en": "kono ude daite omae wo", "jp": "この腕抱いて お前を", "time": 155},
+    14: {"en": "nidoto hanashi wa shinai", "jp": "二度と離しはしない", "time": 135},
+    15: {"en": "", "jp": "", "time": 90},
+    16: {"en": "MACHINEGUN KISS de", "jp": "MACHINEGUN KISSで", "time": 75},
+    17: {"en": "JUST FALL IN LOVE", "jp": "JUST FALL IN LOVE", "time": 120},
+    18: {"en": "", "jp":"", "time": 300},
+};

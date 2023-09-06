@@ -1,0 +1,228 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Bar Coco</title>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/constants.js"></script>
+        <script type="text/javascript" src="js/machinegunkiss.js"></script>
+        <script type="text/javascript" src="js/judgement.js"></script>
+        <script type="text/javascript" src="js/24hourcinderella.js"></script>
+        <script type="text/javascript" src="js/bakamitai.js"></script>
+        <link rel="stylesheet" href="../../assets/css/style.css">
+    </head>
+    <body>
+        <img 
+            id="BarExteriorImg1"
+            src="assets/img/bar_exterior960x720-1png.png"
+            alt="Bar Coco Exterior"
+            style="display: none;">
+        </img>
+        <img 
+            id="BarExteriorImg2"
+            src="assets/img/bar_exterior960x720-2png.png"
+            alt="Bar Coco Exterior"
+            style="display: none;">
+        </img>
+        <img 
+            id="BarExteriorImg3"
+            src="assets/img/bar_exterior960x720-3png.png"
+            alt="Bar Coco Exterior"
+            style="display: none;">
+        </img>
+        <img 
+            id="BarInteriorImg1"
+            src="assets/img/bar_coco960x720-1png.png"
+            alt="Bar Coco Interior"
+            style="display: none;">
+        </img>
+        <img 
+            id="BarInteriorImg2"
+            src="assets/img/bar_coco960x720-2png.png"
+            alt="Bar Coco Interior"
+            style="display: none;">
+        </img>
+        <img 
+            id="KaraokeSongSelectImg"
+            src="assets/img/karaoke960x720songselect-png.png"
+            alt="Karaoke"
+            style="display: none;">
+        </img>
+        <img 
+            id="KaraokeSongYakuzaImg1"
+            src="assets/img/karaoke960x720-1png.png"
+            alt="Karaoke"
+            style="display: none;">
+        </img>
+        <img 
+            id="KaraokeSongYakuzaImg2"
+            src="assets/img/karaoke960x720-2png.png"
+            alt="Karaoke"
+            style="display: none;">
+        </img>
+        <img 
+            id="KaraokeSongEyepatchImg1"
+            src="assets/img/karaoke960x720eyepatch-1png.png"
+            alt="Karaoke"
+            style="display: none;">
+        </img>
+        <img 
+            id="KaraokeSongEyepatchImg2"
+            src="assets/img/karaoke960x720eyepatch-2png.png"
+            alt="Karaoke"
+            style="display: none;">
+        </img>
+
+        <audio 
+            id="ShopBell"
+            src="assets/audio/shopbell.mp3"
+            style="display: none;">
+        </audio>
+        <audio 
+            id="BarCocoAudio"
+            src="assets/audio/barcoco.mp3"
+            style="display: none;">
+        </audio>
+        <audio 
+            id="MachineGunKiss"
+            src="assets/audio/machinegunkiss.mp3"
+            style="display: none;">
+        </audio>
+        <audio 
+            id="Judgement"
+            src="assets/audio/judgement.mp3"
+            style="display: none;">
+        </audio>
+        <audio 
+            id="24HourCinderella"
+            src="assets/audio/24hourcinderella.mp3"
+            style="display: none;">
+        </audio>
+        <audio 
+            id="BakaMitai"
+            src="assets/audio/bakamitai.mp3"
+            style="display: none;">
+        </audio>
+
+        <!-- split text into a controls and other section-->
+        <div class="content-container">
+            <canvas
+                id="canvas"
+                alt="Bar Coco"
+                style="margin: auto; display: block;"
+                width="960"
+                height="720">
+            </canvas>
+
+            <h2 style="width: 90%; margin-left: auto; margin-right: auto;">Please read below / 下のことを読んでください</h2>
+            <button type="button" onclick="enClicked()" style="width: 75px; height: 3em; margin-left: 5%;">English</button>
+            <button type="button" onclick="jpClicked()" style="width: 75px; height: 3em;">日本語</button>
+            <div id="enInformation" style="display: none; width: 90%; margin-left: auto; margin-right: auto;">
+                <h3>Controls</h3>
+                <ul>
+                    <li>
+                        For English, press the "e" button (English is already the default). This cannot be changed once you enter.
+                    </li>
+                    <li>
+                        Continue with the enter key.
+                    </li>
+                    <li>
+                        Go back with the escape key.
+                    </li>
+                    <li>
+                        Pause with the spacebar.
+                    </li>
+                </ul>
+                <h3>Other things</h3>
+                <ul>
+                    <li>
+                        Since a keyboard is required, this website does not support mobile. I apologize for the inconvenience.
+                    </li>
+                    <li>
+                        This page uses audio.
+                    </li>
+                    <li>
+                        This is a fan project only. I do not make any money from this. 
+                    </li>
+                    <li>
+                        Kiryu Coco is the property of Hololive Production and Cover Corporation.
+                    </li>
+                    <li>
+                        Kiryu Kazuma, Goro Majima, and the karaoke songs are the property of Ryu Ga Gotoku Studio and Sega.
+                    </li>
+                    <li>
+                        I have no affiliation with either Sega or Cover Corporation.
+                    </li>
+                </ul>
+            </div>
+            <div id="jpInformation" style="display: none; width: 90%; margin-left: auto; margin-right: auto;">
+                <h3>コントロール</h3>
+                    <ul>
+                        <li>
+                            日本語には「ｊ」のボタンをおしてください。入った後で、これが変えられません。
+                        </li>
+                        <li>
+                            「Enter」というボタンで続きます。
+                        </li>
+                        <li>
+                            「Escape」というボタンで戻ります。
+                        </li>
+                        <li>
+                            「Spacebar」というボタンで一時停止します。
+                        </li>
+                    </ul>
+                <h3>他のこと</h3>
+                <ul>
+                    <li>
+                        キーボードが必要ですから、ケイタイのブラウザは支持されません。ご迷惑ですみません。
+                    </li>
+                    <li>
+                        このページはオーディオを使います。
+                    </li>
+
+                    <li>
+                        これはファンプロジェクトだけです。このプロジェクトからお金を全然もらえません。
+                    </li>
+
+                    <li>
+                        桐生ココはカバー株式会社のホロライブプロダクションのものです。
+                    </li>
+
+                    <li>
+                        桐生一馬とカラオケの曲は株式会社セガの龍が如くスタジオのものです。
+                    </li>
+                    <li>
+                        カバー株式会社か株式会社セガとの関係がありません。
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <footer class="contact-info">
+            Contact Me <br>
+            adrivill98@gmail.com <br>
+        </footer>
+
+        <script type="text/javascript">
+            document.onload = loadCanvas();
+
+            function enClicked() {
+                var element = document.getElementById("enInformation");
+                buttonClick(element);
+            }
+
+            function jpClicked() {
+                var element = document.getElementById("jpInformation");
+                buttonClick(element);
+            }
+
+            function buttonClick(element) {
+                if (element.style.display == "none") {
+                    element.style.display = "block";
+                } 
+                else {
+                    element.style.display = "none";
+                }
+            }
+        </script>
+    </body>
+</html>
